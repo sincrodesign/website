@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sincro — Somos Ideias em Movimento</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="logo" href="#">Sincro</a>
+    <ul>
+      <li><a href="#work">Trabalhos</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#contact">Contato</a></li>
+    </ul>
+    <button class="menu-toggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <header id="hero">
+    <div class="hero-image-wrap">
+      <img src="4.png" alt="Sincro — Somos Ideias em Movimento" />
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Role para explorar</span>
+      <div class="scroll-line"></div>
+    </div>
+  </header>
+
+  <!-- IDENTITY PANELS -->
+  <section id="work">
+    <div class="section-header">
+      <span class="label">Nossa Essência</span>
+      <h2>Quem Somos</h2>
+    </div>
+
+    <div class="work-panel">
+      <div class="work-panel-image">
+        <div class="panel-label">Missão &amp; Visão</div>
+        <img src="8.png" alt="Missão e Visão" />
+      </div>
+    </div>
+
+    <div class="work-panel reverse">
+      <div class="work-panel-image">
+        <div class="panel-label">O Que Oferecemos</div>
+        <img src="9.png" alt="Consultoria Criativa e Comunicação Humanizada" />
+      </div>
+    </div>
+
+    <div class="work-panel">
+      <div class="work-panel-image">
+        <div class="panel-label">Nossos Valores</div>
+        <img src="10.png" alt="Valores" />
+      </div>
+    </div>
+
+    <div class="work-panel reverse">
+      <div class="work-panel-image">
+        <div class="panel-label">Portfólio</div>
+        <img src="11.png" alt="Portfólio" />
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-header">
+      <span class="label">O Que Fazemos</span>
+      <h2>Serviços</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <span class="service-num">01</span>
+        <h3>Identidade de Marca</h3>
+        <p>Logo, tipografia, sistemas de cor e guias que expressam a alma da sua marca.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">02</span>
+        <h3>Direção de Arte</h3>
+        <p>Liderança criativa para campanhas, editoriais e narrativas visuais.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">03</span>
+        <h3>Consultoria Criativa</h3>
+        <p>Da semente ao movimento — unimos investigação conceitual à excelência técnica.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-num">04</span>
+        <h3>Comunicação Humanizada</h3>
+        <p>Traduzimos vozes e causas com ética, diversidade e propósito.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-text">
+        <span class="label">Fale Conosco</span>
+        <h2>Vamos iniciar um<br /><em>projeto</em></h2>
+        <p>Tem uma ideia? Adoraríamos ouvir. Preencha o formulário e retornaremos em até 24 horas.</p>
+        <div class="contact-details">
+          <a href="mailto:contato@sincrodesign.com">contato@sincrodesign.com</a>
+          <span>Brasil</span>
+        </div>
+      </div>
+      <form class="contact-form" action="https://formsubmit.co/contato@sincrodesign.com" method="POST">
+        <input type="hidden" name="_subject" value="Nova solicitação de projeto — Sincro" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" style="display:none" />
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome" required />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service">Serviço</label>
+          <select id="service" name="service">
+            <option value="" disabled selected>Selecione um serviço</option>
+            <option value="Identidade de Marca">Identidade de Marca</option>
+            <option value="Direção de Arte">Direção de Arte</option>
+            <option value="Consultoria Criativa">Consultoria Criativa</option>
+            <option value="Comunicação Humanizada">Comunicação Humanizada</option>
+            <option value="Outro">Outro</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" rows="5" placeholder="Conte-nos sobre o seu projeto..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="logo">Sincro</span>
+      <p>&copy; 2026 Sincro. Todos os direitos reservados.</p>
+      <div class="footer-links">
+        <a href="#">Instagram</a>
+        <a href="#">Behance</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
