@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mensagem Enviada — Sincro</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .thanks-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5%;
+      gap: 1.5rem;
+    }
+    .thanks-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+    .thanks-icon svg {
+      width: 28px;
+      height: 28px;
+      stroke: var(--accent);
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+    .thanks-wrap .label { margin-bottom: 0; }
+    .thanks-wrap h1 { font-size: clamp(2rem, 4vw, 3rem); }
+    .thanks-wrap p { color: var(--muted); max-width: 420px; line-height: 1.8; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="logo" href="index.html">Sincro</a>
+    <ul>
+      <li><a href="index.html#work">Trabalhos</a></li>
+      <li><a href="index.html#services">Serviços</a></li>
+      <li><a href="index.html#contact">Contato</a></li>
+    </ul>
+    <button class="menu-toggle" aria-label="Abrir menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main class="thanks-wrap">
+    <div class="thanks-icon">
+      <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <span class="label">Mensagem recebida</span>
+    <h1>Obrigado pelo<br /><em>contato!</em></h1>
+    <p>Recebemos sua mensagem e retornaremos em breve. Mal podemos esperar para conhecer o seu projeto.</p>
+    <a href="index.html" class="btn">Voltar ao Início</a>
+  </main>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const navUl = document.querySelector('nav ul');
+    toggle.addEventListener('click', () => navUl.classList.toggle('open'));
+  </script>
+</body>
+</html>
