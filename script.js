@@ -30,3 +30,11 @@ document.querySelectorAll(
   el.classList.add('fade-in');
   observer.observe(el);
 });
+
+// Monta o link de e-mail via JS para não expor o endereço no HTML bruto
+const emailLink = document.getElementById('contact-email');
+if (emailLink) {
+  const address = emailLink.dataset.user + '@' + emailLink.dataset.domain;
+  emailLink.href = 'mailto:' + address;
+  emailLink.textContent = address;
+}
